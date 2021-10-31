@@ -5,8 +5,20 @@ mydict = {}
 
 with open('insurance.csv', mode='r') as infile:
     reader = csv.reader(infile)
-    with open('insurance 2.csv', mode='w') as outfile:
-        writer = csv.writer(outfile)
-        mydict = {rows[0]:rows[1] for rows in reader}
-       
- print(mydict)
+    age = []
+    sex = []
+    bmi = []
+    children = []
+    smoker = []
+    region = []
+    charges = []
+    for rows in reader:
+        age.append(rows[0])
+        sex.append(rows[1])
+        bmi.append(rows[2])
+        children.append(rows[3])
+        smoker.append(rows[4])
+        region.append(rows[5])
+        charges.append(rows[6])
+
+print(sex)
