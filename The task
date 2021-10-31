@@ -1,6 +1,8 @@
 import csv
 import sys
 
+mydict = {}
+
 with open('insurance.csv', mode='r') as infile:
     reader = csv.reader(infile)
     with open('insurance 2.csv', mode='w') as outfile:
