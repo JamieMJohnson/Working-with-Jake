@@ -10,3 +10,17 @@ with open('insurance.csv', mode='r') as infile:
         mydict = {rows[0]:rows[1] for rows in reader}
        
  print(mydict)
+
+
+import csv
+import sys
+
+mydict = {}
+
+with open('insurance.csv', mode='r') as infile:
+    reader = csv.DictReader(infile)
+    for row in reader:
+        mydict[row[0]] = row
+        
+       
+print(mydict)
