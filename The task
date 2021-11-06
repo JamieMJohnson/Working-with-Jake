@@ -21,4 +21,14 @@ with open('insurance.csv', mode='r') as infile:
         region.append(rows[5])
         charges.append(rows[6])
 
-print(sex)
+list_of_dics = []
+i = 1
+while i < len(age):
+    list_of_dics.append({"age":age[i],"sex":sex[i],"bmi":bmi[i],"children":children[i],"smoker":smoker[i],"region":region[i],"charges":charges[i]})
+    i += 1
+
+i = 1
+while i < len(list_of_dics):
+    insurance_dict[charges[i]] = list_of_dics[i]
+    i +=1
+print(insurance_dict)
