@@ -28,8 +28,8 @@ while i < len(age):
     i += 1
 
 insurance_dict = {}
-i = 1
+i = 0
 while i < len(list_of_dics):
-    insurance_dict[charges[i]] = list_of_dics[i]
+    insurance_dict[charges[i+1]] = list_of_dics[i]
     i +=1
 print(insurance_dict)
