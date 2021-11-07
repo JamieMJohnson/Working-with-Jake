@@ -40,9 +40,11 @@ minimum_error = 10000000000000000000
 list_of_m = range(-100000, 100000, 1)
 for i in list_of_m:
     i * 0.1
+#check if this has made the intervals 0.1
 list_of_c = range(-100000, 100000, 1)
 for j in list_of_c:
     j * 0.1
+#check if this has made the intervals 0.1
 m = 0
 c = 0
 total_error = 0
