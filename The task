@@ -55,5 +55,4 @@ for i in list_of_m:
             c = j
             minimum_error = total_error
         total_error = 0
-        return m
-        return c
+
