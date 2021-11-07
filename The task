@@ -33,3 +33,27 @@ while i < len(list_of_dics):
     insurance_dict[charges[i]] = list_of_dics[i]
     i +=1
 print(insurance_dict)
+
+#Key = m * Key["age"] + c
+
+minimum_error = float(inf)
+list_of_m = range(-100000, 100000, 1)
+list_of_m = list_of_m * 0.1
+list_of_c = range(-100000, 100000, 1)
+list_of_c = list_of_m * 0.1
+
+m = 0
+c = 0
+
+for i in list_of_m:
+    for j in list_of_c:
+        for k in charges:
+            error = abs(charges - (i * insurance_dict[k]["age"] + j))
+            total_error += error
+        if total_error < minimum_error:
+            m = i
+            c = j
+            minimum_error = total_error
+        total_error = 0
+        return m
+        return c
