@@ -37,13 +37,15 @@ print(insurance_dict)
 #Key = m * Key["age"] + c
 
 minimum_error = 10000000000000000000
-list_of_m = range(-100000, 100000, 1)
-for i in list_of_m:
-    i * 0.1
+list_of_m_0 = range(-100000, 100000, 1)
+list_of_m = []
+for i in list_of_m_0:
+    list_of_m.append(i * 0.1)
 #check if this has made the intervals 0.1
-list_of_c = range(-100000, 100000, 1)
-for j in list_of_c:
-    j * 0.1
+list_of_c_0 = range(-100000, 100000, 1)
+list_of_c = []
+for j in list_of_c_0:
+    list_of_c.append(j * 0.1)
 #check if this has made the intervals 0.1
 m = 0
 c = 0
